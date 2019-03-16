@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D0CCCB77223D6D8200D0C485 /* DemoTest.h in Headers */ = {isa = PBXBuildFile; fileRef = D0CCCB75223D6D8200D0C485 /* DemoTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0CCCB7E223D6E9600D0C485 /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CCCB7D223D6E9600D0C485 /* Knob.swift */; };
+		D0CCCB80223D6F0500D0C485 /* RotationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CCCB7F223D6F0500D0C485 /* RotationGestureRecognizer.swift */; };
+		D0CCCB82223D6F1A00D0C485 /* KnobRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CCCB81223D6F1A00D0C485 /* KnobRender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D0CCCB72223D6D8200D0C485 /* DemoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0CCCB75223D6D8200D0C485 /* DemoTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoTest.h; sourceTree = "<group>"; };
 		D0CCCB76223D6D8200D0C485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0CCCB7D223D6E9600D0C485 /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
+		D0CCCB7F223D6F0500D0C485 /* RotationGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationGestureRecognizer.swift; sourceTree = "<group>"; };
+		D0CCCB81223D6F1A00D0C485 /* KnobRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnobRender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				D0CCCB75223D6D8200D0C485 /* DemoTest.h */,
+				D0CCCB81223D6F1A00D0C485 /* KnobRender.swift */,
+				D0CCCB7F223D6F0500D0C485 /* RotationGestureRecognizer.swift */,
+				D0CCCB7D223D6E9600D0C485 /* Knob.swift */,
 				D0CCCB76223D6D8200D0C485 /* Info.plist */,
 			);
 			path = DemoTest;
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					D0CCCB71223D6D8200D0C485 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0CCCB82223D6F1A00D0C485 /* KnobRender.swift in Sources */,
+				D0CCCB7E223D6E9600D0C485 /* Knob.swift in Sources */,
+				D0CCCB80223D6F0500D0C485 /* RotationGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		D0CCCB7B223D6D8200D0C485 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.technoexponent.DemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +301,7 @@
 		D0CCCB7C223D6D8200D0C485 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
